@@ -1,0 +1,53 @@
+.heading1{
+    margin-top: 100px;
+    margin-left: 150px;
+    color: white;
+    padding: 100px 0px;
+  }
+  
+  #A {
+    margin: 0;
+     
+    z-index: 1; 
+    position: relative;
+    font-size: 100px; 
+  }
+  #set{
+    width: 600px;
+    height: 550px;
+    float: right;
+    margin-right: 200px;
+    margin-top: 0px;
+    border-radius: 70px;
+    box-shadow: 20px 20px 20px 10px rgba(255, 255, 255, 0.5); 
+    
+  }
+  .flex-container{
+    display: flex;
+    flex-direction: row;
+  }
+  .card{
+    flex: 1;
+  }
+  .top-right-buttons{
+    position: absolute;
+    top: 30px;
+    right: 50px;
+    
+  }
+  #button{
+    color:rgb(13, 20, 154);
+    margin-right: 15px;
+    font-weight: bold;
+    font-size: 20px;
+    
+  }
+  .top-left{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    font-size: 3 4px;
+    color: rgb(207, 218, 234);
+    
+    
+  }

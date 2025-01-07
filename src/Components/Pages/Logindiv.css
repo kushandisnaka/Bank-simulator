@@ -1,0 +1,11 @@
+.wrapper{
+    margin-left: 37%;
+    margin-top: 130px;
+    width: fit-content;
+    height: fit-content;
+    padding: 30px;
+    text-align: center;
+    border-radius: 20px;
+    background-color: hsla(217, 84%, 13%, 0.9);
+    border: 1px solid rgb(113, 99, 99);
+}
