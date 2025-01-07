@@ -11,8 +11,8 @@ function Signup() {
             <div className='wrapper'>
             <h1>Sign Up</h1>
                 <div id='username'><input  type="text" placeholder='Email Address' required/></div>
-                <div id='username'><input   type="text" placeholder='Password' required/></div>
-                <div id='username'><input   type="text" placeholder='Confirm Password' required/></div>
+                <div id='username'><input   type="password" placeholder='Password' required/></div>
+                <div id='username'><input   type="password" placeholder='Confirm Password' required/></div>
                 <div id='username'><input   type="text" placeholder='Account Number' required/></div>
                 <div id='username'><input   type="text" placeholder='Bank name' required/></div>
                 <button className='button'  type='submit'><a className='anchor' href="/login">Sign Up</a></button>

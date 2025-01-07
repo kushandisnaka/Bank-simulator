@@ -5,10 +5,9 @@ import Header from "../Mychannel/Header.jsx"
 
 function Home() {
     return(
-           
-        
+          <>
+        <Header/>
         <div className='flex-container1'>
-            <Header/>
             <div className='card1'>
                 <h1>Deposite Money</h1>
                 <img className='deposite' src="src/assets/pexels-photo-6328942.jpeg" alt="Go to Deposite money" />
@@ -31,6 +30,7 @@ function Home() {
             
 
         </div>
+        </> 
     )  
 }
 

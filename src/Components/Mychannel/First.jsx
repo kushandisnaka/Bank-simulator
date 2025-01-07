@@ -22,7 +22,8 @@ function First() {
         <a id="button" href="/login">Login</a>
         
     </div>
-    <h1 className="top-left">Online Banking</h1>
+    <img className='top-left' id='logo' src="src/assets/NeoBanker_logo.jpeg" alt="logo" />
+    <h1 id='a' className="top-left">Neo Banker</h1>
 
   </>
     

@@ -1,9 +1,17 @@
 import React from 'react'
 import "./Header.css"
-
 function Header() {
     return(
-        <h1>nav bar</h1>
+        <>
+        <img id='logo' src="src/assets/NeoBanker_logo.jpeg" alt="logo" />
+        <div className='flex-container2'>
+            <div><a className='headerFont' href="/home">Home</a></div>
+            <div><a className='headerFont' href="">About us</a></div>
+            <div><a className='headerFont' href="">Profile</a></div>
+            <div><a className='headerFont' href="">Log out</a></div>
+
+        </div>
+        </>
     )  
 }
 
