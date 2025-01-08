@@ -12,10 +12,10 @@ function Home() {
                 <h1>Deposite Money</h1>
                 <img className='deposite' src="src/assets/pexels-photo-6328942.jpeg" alt="Go to Deposite money" />
                 <br />
-                <button className='button' id='button1' type='submit'>Deposite</button>
-                
-                
+                <a  href="/deposite"><button className='button' id='button1' type='submit'>Deposite</button></a>
 
+
+                
             </div>
             <div className='card1'>
             <h1>Transfer Money</h1>

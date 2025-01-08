@@ -1,5 +1,6 @@
 import React from 'react'
 import "./Header.css"
+import Login from "../Pages/Login.jsx"
 function Header() {
     return(
         <>
@@ -8,7 +9,7 @@ function Header() {
             <div><a className='headerFont' href="/home">Home</a></div>
             <div><a className='headerFont' href="">About us</a></div>
             <div><a className='headerFont' href="">Profile</a></div>
-            <div><a className='headerFont' href="">Log out</a></div>
+            <div><a className='headerFont' href="/login">Log out</a></div>
 
         </div>
         </>

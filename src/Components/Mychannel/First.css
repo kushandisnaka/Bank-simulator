@@ -25,6 +25,7 @@
   .flex-container{
     display: flex;
     flex-direction: row;
+    position: fixed;
   }
   .card{
     flex: 1;
@@ -53,5 +54,5 @@
   }
   #a{
     margin-top: 0px;
-    margin-left: 100px;
+    margin-left: 120px;
   }

@@ -3,6 +3,7 @@ import First from "./Components/Mychannel/first"
 import Login from "./Components/Pages/Login"
 import Signup from "./components/pages/Signup"
 import Home from "./Components/Pages/Home"
+import Deposit from "./Components/Pages/Deposit"
 
 
 
@@ -21,6 +22,8 @@ function App() {
       <Route path="/login" element={<Login/>} />
       <Route path="/signup" element={<Signup/>} />
       <Route path="/home" element={<Home/>} />
+      <Route path="/deposite" element={<Deposit/>} />
+
     </Routes>
   </BrowserRouter>
     
