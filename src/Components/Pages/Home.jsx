@@ -2,6 +2,7 @@ import React from 'react'
 import "../Mychannel/background.css"
 import "./Home.css"
 import Header from "../Mychannel/Header.jsx" 
+import {Link} from "react-router"
 
 function Home() {
     return(
@@ -9,20 +10,25 @@ function Home() {
         <Header/>
         <div className='flex-container1'>
             <div className='card1'>
-                <h1>Deposite Money</h1>
-                <img className='deposite' src="src/assets/pexels-photo-6328942.jpeg" alt="Go to Deposite money" />
+                <h1>Bill Payment</h1>
+                <img className='deposite' src="src/assets/pexels-photo-6328942.jpeg" alt="Bill payment" />
                 <br />
-                <a  href="/deposite"><button className='button' id='button1' type='submit'>Deposite</button></a>
+                <Link to="/deposite">
+                    <button className='button' id='button1'>Bill payment</button>
+                </Link>
 
 
                 
             </div>
             <div className='card1'>
             <h1>Transfer Money</h1>
-                <img className='deposite' src="src/assets/pexels-photo-11952303.webp" alt="Go to Deposite money" />
+                <img className='deposite' src="src/assets/pexels-photo-11952303.webp" alt="Money transaction" />
                 <br />
-                <button className='button' id='button1' type='submit'>Transfer</button>
+                <Link to="">
+                    <button className='button' id='button1'>Transfer</button>
+                </Link>
                 
+
 
             </div>
         

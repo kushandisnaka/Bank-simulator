@@ -3,6 +3,7 @@ import "./Loginbackground.css"
 import "./Signup.css"
 import "./Logindiv.css"
 import "../Mychannel/button.css"
+import { Link } from "react-router"
 
 
 function Signup() {
@@ -14,8 +15,25 @@ function Signup() {
                 <div id='username'><input   type="password" placeholder='Password' required/></div>
                 <div id='username'><input   type="password" placeholder='Confirm Password' required/></div>
                 <div id='username'><input   type="text" placeholder='Account Number' required/></div>
-                <div id='username'><input   type="text" placeholder='Bank name' required/></div>
-                <button className='button'  type='submit'><a className='anchor' href="/login">Sign Up</a></button>
+                
+                <div id='username'>
+                    <select name="" id="">
+                        <option value="">Select the Bank</option>
+                        <option value="">Bank of ceylon</option>
+                        <option value="">People's Bank</option>
+                        <option value="">Sampath Bank</option>
+                        <option value="">Commercial Bank</option>
+                        <option value="">Hatton National Bank</option>
+                        <option value="">National Savings Bank</option>
+
+                    
+                        
+                    </select>
+                </div>
+                <Link to="/login">
+                                    <button className='button'>Sign Up</button>
+                
+                                </Link>
                 <p className='a'>Already have an account?<a className='anchor' href="/login">Login</a></p>
 
             </div>

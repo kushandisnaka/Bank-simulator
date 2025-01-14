@@ -1,10 +1,10 @@
-import { useState } from "react"
+import React from "react"
 import First from "./Components/Mychannel/first"
 import Login from "./Components/Pages/Login"
 import Signup from "./components/pages/Signup"
 import Home from "./Components/Pages/Home"
 import Deposit from "./Components/Pages/Deposit"
-
+import About from "./Components/Pages/About"
 
 
 import {BrowserRouter, Route, Routes} from 'react-router'
@@ -12,8 +12,7 @@ import {BrowserRouter, Route, Routes} from 'react-router'
 
 function App() {
 
-  const [count, setCount] = useState(0)
-
+  
   return (
     <>
     <BrowserRouter>
@@ -23,6 +22,8 @@ function App() {
       <Route path="/signup" element={<Signup/>} />
       <Route path="/home" element={<Home/>} />
       <Route path="/deposite" element={<Deposit/>} />
+       <Route path="/about" element={<About/>} /> 
+
 
     </Routes>
   </BrowserRouter>

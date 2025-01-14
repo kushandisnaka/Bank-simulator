@@ -44,3 +44,13 @@ input[type="text"] {
 #top{
   margin-top: 200px;
 }
+select{
+    width: 350px;
+    height: 30px;
+    appearance: none;
+    background-color: #eeeef2e1;
+    border-radius: 10px;
+    cursor: pointer;
+    opacity: 0.6;
+    
+}

@@ -3,7 +3,7 @@ import "./Login.css"
 import "./Loginbackground.css"
 import "./Logindiv.css"
 import "../Mychannel/button.css"
-
+import { Link } from "react-router"
 function Login() {
     return(
         <div className='background'>
@@ -15,7 +15,11 @@ function Login() {
                 <label className='a' ><input type="checkbox" />Remember me</label>
                 <a className='anchor' href="">Forgot password</a>
                 </div>
-                <button className='button'  type='submit'><a className='anchor' href="/home">Login</a></button>
+                <Link to="/home">
+                    <button className='button'>Login</button>
+
+                </Link>
+
                 <div>
                     <p className='a'>Don't have an account?<a className='anchor' href="/signup">Sign up</a></p>
                 </div>

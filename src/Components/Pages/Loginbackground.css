@@ -3,7 +3,8 @@ body {
   }
   
   .background {
-      background-image: url(src/assets/2852.jpg_wh1200.jpg);
+       background-image: url(src/assets/2852.jpg_wh1200.jpg); 
+      
       background-repeat: no-repeat;
       background-size: cover;
       position: fixed;
