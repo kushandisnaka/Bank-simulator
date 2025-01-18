@@ -1,39 +1,72 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./Loginbackground.css"
 import "./Signup.css"
 import "./Logindiv.css"
 import "../Mychannel/button.css"
-import { Link } from "react-router"
+import { Link, UNSAFE_createClientRoutesWithHMRRevalidationOptOut } from "react-router"
+
+import { useNavigate } from 'react-router'
 
 
 function Signup() {
+
+    const navigate = useNavigate();
+
+    const [creds, setCreds] = useState({
+        email: "",
+        password: "",
+        password2: "",
+        account: "",
+        bank: ""
+    });
+
+    const onCredChange = (key, value) => {
+        const current = {...creds};
+        current[key] = value;
+        setCreds(current);
+    }
+
+    const handleSignUp = async () => {
+        if (creds.password != creds.password2) {
+            alert("passwords does not match");
+            return;
+        }
+
+        const {password2, ...regiterInfo} = creds;
+
+        const res = await fetch('http://localhost:3000/register', {method: "POST", body:JSON.stringify(regiterInfo), headers:{'Content-Type': "application/json"}});
+        if (res.ok) {
+            navigate("/login");
+        } else {
+            alert("user already exists");
+        }
+    }
+
     return(
         <div className='background'>
             <div className='wrapper'>
             <h1>Sign Up</h1>
-                <div id='username'><input  type="text" placeholder='Email Address' required/></div>
-                <div id='username'><input   type="password" placeholder='Password' required/></div>
-                <div id='username'><input   type="password" placeholder='Confirm Password' required/></div>
-                <div id='username'><input   type="text" placeholder='Account Number' required/></div>
+                <div id='username'><input  type="text" placeholder='Email Address' required value={creds.email} onChange={(e) => onCredChange('email', e.currentTarget.value)}/></div>
+                <div id='username'><input   type="password" placeholder='Password' required value={creds.password} onChange={(e) => onCredChange('password', e.currentTarget.value)}/></div>
+                <div id='username'><input   type="password" placeholder='Confirm Password' required value={creds.password2} onChange={(e) => onCredChange('password2', e.currentTarget.value)}/></div>
+                <div id='username'><input   type="text" placeholder='Account Number' required value={creds.account} onChange={(e) => onCredChange('account', e.currentTarget.value)}/></div>
                 
                 <div id='username'>
-                    <select name="" id="">
+                    <select value={creds.bank} onChange={(e) => onCredChange('bank', e.currentTarget.value)}>
                         <option value="">Select the Bank</option>
-                        <option value="">Bank of ceylon</option>
-                        <option value="">People's Bank</option>
-                        <option value="">Sampath Bank</option>
-                        <option value="">Commercial Bank</option>
-                        <option value="">Hatton National Bank</option>
-                        <option value="">National Savings Bank</option>
+                        <option value="BOC">Bank of ceylon</option>
+                        <option value="PEOPLES">People's Bank</option>
+                        <option value="SAMPATH">Sampath Bank</option>
+                        <option value="COM">Commercial Bank</option>
+                        <option value="HNB">Hatton National Bank</option>
+                        <option value="NSB">National Savings Bank</option>
 
                     
                         
                     </select>
                 </div>
-                <Link to="/login">
-                                    <button className='button'>Sign Up</button>
+                    <button className='button' onClick={()=>handleSignUp()}>Sign Up</button>
                 
-                                </Link>
                 <p className='a'>Already have an account?<a className='anchor' href="/login">Login</a></p>
 
             </div>

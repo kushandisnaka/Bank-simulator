@@ -3,7 +3,7 @@ import First from "./Components/Mychannel/first"
 import Login from "./Components/Pages/Login"
 import Signup from "./components/pages/Signup"
 import Home from "./Components/Pages/Home"
-import Deposit from "./Components/Pages/Deposit"
+import Bill_payment from "./Components/Pages/Bill_payment"
 import About from "./Components/Pages/About"
 
 
@@ -21,7 +21,7 @@ function App() {
       <Route path="/login" element={<Login/>} />
       <Route path="/signup" element={<Signup/>} />
       <Route path="/home" element={<Home/>} />
-      <Route path="/deposite" element={<Deposit/>} />
+      <Route path="/bill_payment" element={<Bill_payment/>} />
        <Route path="/about" element={<About/>} /> 
 
 
