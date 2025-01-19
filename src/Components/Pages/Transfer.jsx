@@ -1,21 +1,17 @@
 import React, {useState,useEffect} from 'react'
-// import {useNavigate} from 'react-router-dom'
 import "../Mychannel/background.css"
 import Header from "../Mychannel/Header.jsx"
 import "./Bill_payment.css"
 import "./Logindiv.css"
 
 
-
-function Bill_payment() {
-    const [category, setCategory] = useState('');
+function Transfer() {
+    //const [category, setCategory] = useState('');
     const [date, setDate] = useState('');
     const [fromAccount, setFromAccount] = useState('');
     const [toAccount, setToAccount] = useState('');
     const [amount, setAmount] = useState('');
     const [isModalOpen, setIsModalOpen] = useState(false);
-
-    // const navigate = useNavigate();
 
     useEffect(() => {
         const today = new Date().toISOString().split('T')[0];
@@ -28,16 +24,11 @@ function Bill_payment() {
     },[]);
 
 
-    const handleCategoryChange = (event) => {
-        setCategory(event.target.value);
-    };
-
     const handleDateChange = (event) => {
         setDate(event.target.value);
     };
 
     const handlePayClick = () => {
-
         setIsModalOpen(true);
     };
 
@@ -48,7 +39,8 @@ function Bill_payment() {
             toAccount,
             amount,
             date,
-            category,
+            category:"Fund Transfer",
+            
         };
     
     
@@ -59,15 +51,12 @@ function Bill_payment() {
         localStorage.setItem("paymentSummaries", JSON.stringify(updatedSummaries));
     
     };
-
-
-
     return(
         <>
         <Header/>
-        <div id='pay' className='wrapper'>
-            <h1 >Neo Banker</h1>
-            <h3 style={{color:'white'}}>Recharge & Bill Payment</h3>
+        <div id='pay' className='wrapper' style={{marginLeft : "31%"}}>
+            <h1 style={{}}>Neo Banker</h1>
+            <h3 style={{color:'white'}}>Fund Transfer</h3>
 
             <h4 className='heading'>From Account</h4>
 
@@ -77,26 +66,10 @@ function Bill_payment() {
              readOnly
              required/>
              </div>
-            <h4 className='heading'>Bill Payee Category</h4>
-            <div >
-            <select
-                value={category}
-                onChange={handleCategoryChange}
-                className='box' 
-                required>
-                
-                <option value="" disabled selected>Select a category</option>
-                <option value="electricity">Electricity</option>
-                <option value="water bill">Water bill</option>
-                <option value="telephone">Telephone</option>
-                <option value="education">Education</option>
-                <option value="Recharge">Recharge</option>
-                <option value="other">Other bill payment</option>
-            </select>
-            </div>
-            <h4 className='heading'>
-            {category === 'Recharge'? 'Mobile Number' : 'Account number'}
-            </h4>
+            
+             <h4 className='heading'>
+                    To Account
+            </h4> 
 
             <div className='box'><input
                         type="text"
@@ -105,7 +78,7 @@ function Bill_payment() {
                         required
                     /></div>
 
-            <h4 className='heading'>Amount</h4>
+            <h4 className='heading'>Transfer Amount</h4>
             <div className='box'> <input
                         type="text"
                         value={amount}
@@ -122,12 +95,12 @@ function Bill_payment() {
                         required
                     />
                 </div>
-            <button className='button' id='paybutton' onClick={handlePayClick}>pay</button>
+            <button className='button' id='paybutton' onClick={handlePayClick}>Transfer</button>
 
 
 
         </div>
-
+        {}
         {isModalOpen && (
                 <div className="modal-overlay">
                     <div className="modal-content">
@@ -145,4 +118,4 @@ function Bill_payment() {
     );  
 }
 
-export default Bill_payment
+export default Transfer

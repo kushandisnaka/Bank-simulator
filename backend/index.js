@@ -25,7 +25,7 @@ app.post('/register', async (req, res) => {
 app.post("/login", async (req, res) => {
     const {email, password} = req.body;
     try {
-         const user = await prisma.user.findUniqueOrThrow({where:{email, password}});
+         const user = await prisma.user.findUniqueOrThrow({where:{email, password}, select: { id: true, email: true, account: true }});
         res.json(user);
     } catch {
         res.status(404).json({message: "user does not exist"});

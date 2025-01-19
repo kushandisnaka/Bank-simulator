@@ -22,7 +22,7 @@ function Home() {
             <h2>Transfer Money</h2>
                 <img className='deposite'  src="src/assets/pexels-photo-11952303.webp" alt="Money transaction" />
                 <br />
-                <Link to="">
+                <Link to="/transfer">
                     <button className='button' id='button1'>Transfer</button>
                 </Link>
             </div>
@@ -30,7 +30,7 @@ function Home() {
                 <h2>Account Summary</h2>
                 <img className='deposite' src="src/assets/pexels-photo-5466810.jpeg" alt="Account summary" />
                 <br />
-                <Link to="">
+                <Link to="/summary">
                     <button className='button' id='button1'>Ac.Summary</button>
                 </Link>
 

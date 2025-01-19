@@ -14,6 +14,8 @@ function Header() {
 
     const handleLogOut = () => {
         localStorage.removeItem("user");
+        localStorage.removeItem("paymentSummaries");
+        localStorage.removeItem("user");
         navigate("/login");
     };
 
@@ -50,6 +52,7 @@ function Header() {
 
     return(
         <>
+        <div className='headerBAckground'>
         <img id='logo' src="src/assets/NeoBanker_logo.jpeg" alt="logo" />
         <div className='flex-container2'>
             <div><a className='headerFont' href="/home">Home</a></div>
@@ -60,12 +63,13 @@ function Header() {
             <div class="dropdown-menu">
                 <a onClick={() => handleLogOut()} class="dropdown-item">Logout</a>
                 <a onClick={handleDeleteAccount} class="dropdown-item" href="#">Delete Account</a>
-                <a class="dropdown-item" href="">Change Password</a>
+                <a class="dropdown-item" href="/password">Change Password</a>
             </div>
         </div>
 
             
 
+        </div>
         </div>
         </>
     )  

@@ -10,11 +10,12 @@
 
 .headerFont{
     color: white;
-    font-size: 20px;
+    font-size: 21px;
     padding: 25px;
     font-family: sans-serif;
     text-decoration: none;
     cursor: pointer;
+    font-family: "Roboto";
 
 }
 #logo{
@@ -25,4 +26,8 @@
     margin-left: 30px;
     margin-top: -8px;
 
+}
+.headerBAckground{
+    padding: 10px;
+    background-color: hsla(243, 88%, 13%, 0.1);
 }
