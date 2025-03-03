@@ -37,10 +37,12 @@
     
   }
   #button{
-    color:rgb(13, 20, 154);
-    margin-right: 15px;
+    /* color:rgb(13, 20, 154); */
+    color: white;
+    margin-right: 25px;
     font-weight: bold;
     font-size: 20px;
+    text-decoration: none;
     
   }
   .top-left{

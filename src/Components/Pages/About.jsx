@@ -10,7 +10,7 @@ function About() {
 
         <Header/>
         <div style={{position: 'fix'}} >
-        <img className='about-image' src="src/assets/pexels-photo-5553924.webp" alt="About us" />
+        <img className='about-image' src="src/assets/newEdit-photo-5553924.jpg" alt="About us" />
         <h1 style={{textAlign: "center"}} >About Us</h1>
         <h2 className='about-text'>Welcome to Neo Banker</h2>
         <p className='content'>At Neo Banker, we are dedicated to simplifying the way you manage your financial transactions and bill payments.Neo Banker was founded with a vision to make financial services more accessible, reliable, and user-friendly. We understand the challenges of managing finances in today’s fast-paced world, and we aim to bridge the gap with innovative solutions tailored to your needs.  </p>

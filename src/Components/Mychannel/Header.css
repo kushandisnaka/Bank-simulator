@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: row;
     margin-top: 20px;
-    justify-content: end;
+    justify-content: flex-end;
     margin-right: 20px;
 
        
@@ -12,19 +12,19 @@
     color: white;
     font-size: 21px;
     padding: 25px;
-    font-family: sans-serif;
+    
     text-decoration: none;
     cursor: pointer;
-    font-family: "Roboto";
+    
 
 }
 #logo{
-    width:60px;
-    height: 60px;
+    width:50px;
+    height: 50px;
     float: left;
     border-radius: 60px;
     margin-left: 30px;
-    margin-top: -8px;
+    margin-top: 2px;
 
 }
 .headerBAckground{

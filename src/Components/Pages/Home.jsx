@@ -8,30 +8,30 @@ function Home() {
     return(
           <>
         <Header/>
-        <div className='flex-container1'>
-            <div className='card1'>
+        <div className='flex-container1' >
+            <div className='card1' id='margin1'>
                 <h2>Bill Payment</h2>
                 <img  className='deposite'  src="src/assets/pexels-photo-6328942.jpeg" alt="Bill payment" />
                 <br />
                 <Link to="/bill_payment">
-                    <button className='button' id='button1'>Bill payment</button>
+                    <button  id='button1'>Bill payment</button>
                 </Link>               
             </div>
 
-            <div className='card1'>
+            <div className='card1 hover'>
             <h2>Transfer Money</h2>
                 <img className='deposite'  src="src/assets/pexels-photo-11952303.webp" alt="Money transaction" />
                 <br />
                 <Link to="/transfer">
-                    <button className='button' id='button1'>Transfer</button>
+                    <button  id='button1'>Transfer</button>
                 </Link>
             </div>
-            <div className='card1'>
+            <div className='card1' id='margin2'>
                 <h2>Account Summary</h2>
                 <img className='deposite' src="src/assets/pexels-photo-5466810.jpeg" alt="Account summary" />
                 <br />
                 <Link to="/summary">
-                    <button className='button' id='button1'>Ac.Summary</button>
+                    <button  id='button1'>Ac.Summary</button>
                 </Link>
 
             </div>

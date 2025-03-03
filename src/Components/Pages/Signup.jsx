@@ -44,8 +44,8 @@ function Signup() {
 
     return(
         <div className='background'>
-            <div className='wrapper'>
-            <h1>Sign Up</h1>
+            <div className='wrapper' id='b'>
+            <h2>Sign Up</h2>
                 <div id='username'><input  type="text" placeholder='Email Address' required value={creds.email} onChange={(e) => onCredChange('email', e.currentTarget.value)}/></div>
                 <div id='username'><input   type="password" placeholder='Password' required value={creds.password} onChange={(e) => onCredChange('password', e.currentTarget.value)}/></div>
                 <div id='username'><input   type="password" placeholder='Confirm Password' required value={creds.password2} onChange={(e) => onCredChange('password2', e.currentTarget.value)}/></div>
@@ -65,9 +65,9 @@ function Signup() {
                         
                     </select>
                 </div>
-                    <button className='button' onClick={()=>handleSignUp()}>Sign Up</button>
+                    <button className='button1' id='length' onClick={()=>handleSignUp()}>Sign Up</button>
                 
-                <p className='a'>Already have an account?<a className='anchor' href="/login">Login</a></p>
+                <p className='a'>Already have an account?<a className='anchor1' href="/login">Login</a></p>
 
             </div>
 

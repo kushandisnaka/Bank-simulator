@@ -57,7 +57,7 @@ function Header() {
         <div className='flex-container2'>
             <div><a className='headerFont' href="/home">Home</a></div>
             <div><a className='headerFont' href="/about">About us</a></div>
-            <div><a className='headerFont' href="">{user ? user.email: "Profile"}</a></div>
+            <div><a className='headerFont' href="">{user ? user.email: "E-mail"}</a></div>
         <div class="dropdown-container">
             <a class="headerFont dropdown-header" href="">Settings</a>
             <div class="dropdown-menu">
