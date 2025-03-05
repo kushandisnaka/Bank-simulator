@@ -53,10 +53,12 @@ function Transfer() {
     };
     return(
         <>
+        
+        <div className='background1'>
         <Header/>
-        <div id='pay' className='wrapper' style={{marginLeft : "31%"}}>
-            <h1 style={{}}>Neo Banker</h1>
-            <h3 style={{color:'white'}}>Fund Transfer</h3>
+        <div id='pay' className='wrapper' style={{marginLeft : "35%", marginTop : "40px"}}>
+            <h1 id='NB'>Neo Banker</h1>
+            <h3  id='NB'>Fund Transfer</h3>
 
             <h4 className='heading'>From Account</h4>
 
@@ -114,6 +116,7 @@ function Transfer() {
             )}
         
         
+        </div>
         </>
     );  
 }

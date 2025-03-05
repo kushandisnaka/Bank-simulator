@@ -1,17 +1,17 @@
-.about-image{
-    width: 100%;
-    margin-top: 20px;
-    height: 70vh;
+.top{
+    margin-top: 50px;
 }
 .about-text{
     color: white;
     margin-left: 10px;
+    
 }
 .content{
     margin-left: 30px;
     margin-right: 30px;
     font-size: 20px;
     font-weight: bold;
+    color: beige;
 }
 .flex-container5{
     display: flex;
@@ -20,4 +20,7 @@
 }
 .card5{
     flex: 1;
+}
+#position{
+    position: relative;
 }

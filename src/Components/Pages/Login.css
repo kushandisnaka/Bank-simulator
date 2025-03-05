@@ -72,8 +72,10 @@ input[type="text"] {
 }
 
 #top{
-  margin-top: 140px;
+  margin-top: 170px;
   border-radius: 10px;
+  margin-left: 540px;
+  height: 400px;
 }
 select{
     width: 371px;
@@ -87,17 +89,20 @@ select{
     opacity: 0.4;
     
 }
-.button1{
+.button11{
   width: 100%;
-  background-color: #319795;
+  background-color: #618c69;
   color: white;
   padding: 10px;
   border: none;
   border-radius: 6px;
   cursor: pointer;
+  margin-top: 15px;
+  font-weight: bold;
+  font-size: 15px;
 }
 button:hover {
-  background-color: #2f855a;
+  background-color: #aecfbe;
 }
 #length{
   height: 43px;

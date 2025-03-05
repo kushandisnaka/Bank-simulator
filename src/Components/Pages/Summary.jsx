@@ -2,6 +2,7 @@ import React, { useEffect, useState} from 'react'
 import "./Loginbackground.css"
 import Header from "../Mychannel/Header"
 import "./Logindiv.css"
+import "./Bill_payment.css"
 
 function Summary(){
     const [paymentSummaries, setPaymentSummaries] = useState([]);
@@ -14,6 +15,7 @@ function Summary(){
     
     return(
         <>
+        <div className='background1' style={{position:"absolute" ,height:"150vh"}} >
         <Header/>
         <h2 style={{textAlign:"center"}}>Payment Summary</h2>
         <div style={{marginLeft:"20%"}}>
@@ -24,8 +26,9 @@ function Summary(){
                                 key={index}
                                 style={{
                                     marginBottom: "20px",
-                                    borderBottom: "1px solid gray",
                                     paddingBottom: "10px",
+                                    color: " beige",
+
                                 }}
                             >
                                 <p>
@@ -48,6 +51,7 @@ function Summary(){
                 )}
             </div>
            
+        </div>
         </>
     );
 }

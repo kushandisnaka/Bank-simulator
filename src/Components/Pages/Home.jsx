@@ -6,7 +6,8 @@ import {Link} from "react-router"
 
 function Home() {
     return(
-          <>
+        <>
+        <div className='background2'>
         <Header/>
         <div className='flex-container1' >
             <div className='card1' id='margin1'>
@@ -18,12 +19,12 @@ function Home() {
                 </Link>               
             </div>
 
-            <div className='card1 hover'>
+            <div className='card1'>
             <h2>Transfer Money</h2>
                 <img className='deposite'  src="src/assets/pexels-photo-11952303.webp" alt="Money transaction" />
                 <br />
                 <Link to="/transfer">
-                    <button  id='button1'>Transfer</button>
+                    <button  id='button1'>Transfer Money</button>
                 </Link>
             </div>
             <div className='card1' id='margin2'>
@@ -41,6 +42,8 @@ function Home() {
             
 
         </div>
+        </div>
+        
         </> 
     )  
 }

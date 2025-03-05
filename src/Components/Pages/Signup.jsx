@@ -43,7 +43,7 @@ function Signup() {
     }
 
     return(
-        <div className='background'>
+        <div className='background1'>
             <div className='wrapper' id='b'>
             <h2>Sign Up</h2>
                 <div id='username'><input  type="text" placeholder='Email Address' required value={creds.email} onChange={(e) => onCredChange('email', e.currentTarget.value)}/></div>
@@ -65,7 +65,7 @@ function Signup() {
                         
                     </select>
                 </div>
-                    <button className='button1' id='length' onClick={()=>handleSignUp()}>Sign Up</button>
+                    <button className='button11' id='length' onClick={()=>handleSignUp()}>Sign Up</button>
                 
                 <p className='a'>Already have an account?<a className='anchor1' href="/login">Login</a></p>
 

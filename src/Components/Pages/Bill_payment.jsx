@@ -64,10 +64,11 @@ function Bill_payment() {
 
     return(
         <>
-        <Header/>
-        <div id='pay' className='wrapper'>
-            <h1 >Neo Banker</h1>
-            <h3 style={{color:'white'}}>Recharge & Bill Payment</h3>
+        <div className='background1 ' >
+            <Header/>
+            <div id='pay' className='wrapper '  >
+        
+            <h3 id='NB' style={{color:'white'}}>Recharge & Bill Payment</h3>
 
             <h4 className='heading'>From Account</h4>
 
@@ -79,7 +80,8 @@ function Bill_payment() {
              </div>
             <h4 className='heading'>Bill Payee Category</h4>
             <div >
-            <select
+            <select id='SB'
+
                 value={category}
                 onChange={handleCategoryChange}
                 className='box' 
@@ -122,7 +124,7 @@ function Bill_payment() {
                         required
                     />
                 </div>
-            <button className='button' id='paybutton' onClick={handlePayClick}>pay</button>
+            <button className='button1' id='paybutton' onClick={handlePayClick}>pay</button>
 
 
 
@@ -140,6 +142,7 @@ function Bill_payment() {
                 </div>
             )}
         
+        </div>
         
         </>
     );  

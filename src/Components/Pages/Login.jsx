@@ -31,7 +31,7 @@ function Login() {
     }
 
     return(
-        <div className='background'>
+        <div className='background1'>
             <div  className='wrapper' id="top">
                 <h2>Login</h2>
                 <div id='username'><input  type="text" placeholder='Email' required value={creds.email} onChange={(e) => onCredChange('email', e.currentTarget.value)}/></div>
@@ -40,7 +40,7 @@ function Login() {
                 <label className='a' ><input type="checkbox" />Remember me</label>
                 <a className='anchor' href="">Forgot password</a>
                 </div>
-                <button id='length' className='button1' onClick={() => handleLogin()}>Login</button>
+                <button id='length' className='button11' onClick={() => handleLogin()}>Login</button>
 
                 <div>
                     <p className='a'>Don't have an account?<a className='anchor1'   href="/signup">Sign up</a></p>

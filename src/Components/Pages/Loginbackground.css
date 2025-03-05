@@ -2,15 +2,27 @@ body {
     margin:0;
   }
   
-  .background {
-       background-image: url(src/assets/businessman-hand-touching-virtual-graphical-interface-innovation-idea-digital-solution_771745-1071.jpg); 
-      
-      background-repeat: no-repeat;
-      background-size: cover;
-      position: fixed;
-      height: 100vh;
-      width: 100%;
-      opacity: 0.9;
-      z-index: 1;
-      
-    }
+  .background1 {
+    background-image: url(C:\Users\kushan\OneDrive\Desktop\html\bankproject\Bank-simulator\src\assets\pexels-photo-5553924.webp); 
+   
+   background-repeat: no-repeat;
+   background-size: cover;
+   height: 100vh;
+   width: 100%;
+   position: fixed;
+   opacity: 0.9;
+   z-index: -100;
+   
+   
+ }
+ .background1::before{
+     content: "";
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background-color: rgba(0, 0, 0, 0.7);
+     z-index: -10;
+     filter: blur(10);
+ }
