@@ -2,12 +2,14 @@ import React from 'react'
 import Header from "../Mychannel/Header"
 import "../Mychannel/background.css"
 import "./Changepassword.css"
+import "./Bill_payment.css"
 
 function Changepassword(){
     return(
         <>
+        <div className='background1'>
         <Header/>
-        <div className='wrapper'> 
+        <div className='wrapper' id='changePosition'> 
         <div id='alighn'>
         <label htmlFor="oldpassword" className='space'>Old Password <span >*</span></label>
         <input className='box1' type="password"  />
@@ -22,6 +24,7 @@ function Changepassword(){
         </div>
         <button className='button1'> Change Password</button>
 
+        </div>
         </div>
 
         </>

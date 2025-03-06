@@ -52,19 +52,19 @@ input[type="text"] {
   }
   
   .a{
-    font-size: 14px;
+    font-size: 16px;
     color: white;
     
     
 }
 .anchor{
-  color:blue;
+  color:rgb(3, 126, 79);
   text-decoration: none;
   margin-left: 130px;
   
 }
 .anchor1{
-  color:blue;
+  color:rgb(3, 126, 79);
   text-decoration: none;
   margin-left: 10px;
   
@@ -74,7 +74,7 @@ input[type="text"] {
 #top{
   margin-top: 170px;
   border-radius: 10px;
-  margin-left: 540px;
+  margin-left: 550px;
   height: 400px;
 }
 select{
@@ -91,7 +91,7 @@ select{
 }
 .button11{
   width: 100%;
-  background-color: #618c69;
+  background-color: #616762;
   color: white;
   padding: 10px;
   border: none;
@@ -102,7 +102,7 @@ select{
   font-size: 15px;
 }
 button:hover {
-  background-color: #aecfbe;
+  background-color: #15261e;
 }
 #length{
   height: 43px;

@@ -16,7 +16,7 @@ function Header() {
         localStorage.removeItem("user");
         localStorage.removeItem("paymentSummaries");
         localStorage.removeItem("user");
-        navigate("/login");
+        navigate("/");
     };
 
     const handleDeleteAccount = async () => {
@@ -60,8 +60,8 @@ function Header() {
             <div><a className='headerFont' href="">{user ? user.email: "E-mail"}</a></div>
         <div class="dropdown-container">
             <a class="headerFont dropdown-header" href="">Settings</a>
-            <div class="dropdown-menu">
-                <a onClick={() => handleLogOut()} class="dropdown-item">Logout</a>
+            <div class="dropdown-menu" id='menuColor'>
+                <a onClick={() => handleLogOut()} class="dropdown-item" >Logout</a>
                 <a onClick={handleDeleteAccount} class="dropdown-item" href="#">Delete Account</a>
                 <a class="dropdown-item" href="/password">Change Password</a>
             </div>

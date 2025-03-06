@@ -5,10 +5,9 @@ import "./background.css"
 function First() {
   return (
   <>
+    <div className='background0'>
     <div className="flex-cotainer">
-      <div className="card">
-        <img id="set" src="src/assets/pexels-reiner-sct-140938854-10330121.jpg" alt="online banking" />
-      </div>
+      
       <div className="card heading1">
           <h3>SAVE & MANAGE YOUR MONEY</h3>
           <h1 id="A">Banking</h1>
@@ -24,6 +23,7 @@ function First() {
     </div>
     <img className='top-left' id='logo' src="src/assets/NeoBanker_logo.jpeg" alt="logo" />
     <h1 id='a' className="top-left">Neo Banker</h1>
+    </div>
 
   </>
     

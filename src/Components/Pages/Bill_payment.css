@@ -12,11 +12,11 @@
     
 }
 #pay{
-    margin-left: 550px;
+    margin-left: 570px;
     margin-top: 10px;
     text-align: left;
     margin-bottom: 30px;
-    background-color: hsla(243, 88%, 13%, 0.5);
+    background-color: hsla(243, 88%, 13%, 0.4);
     z-index: 10;   
     
     
@@ -26,10 +26,14 @@
     margin-left: 10;
     width: 370px;
     height: 44px;
-    background-color: #618c69;
+    background-color:#616762;
     font-weight: bold;
     font-size: 15px;
+    transition: transform 0.3s ease-in-out;
     
+}
+#paybutton:hover {
+    transform: scale(1.07); 
 }
 
 .modal-overlay {
@@ -106,7 +110,7 @@ body {
         height: 100%;
         background-color: rgba(0, 0, 0, 0.7);
         z-index: -20;
-        filter: blur(15);
+        
     }
 
 

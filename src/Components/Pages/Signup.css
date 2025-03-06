@@ -1,7 +1,10 @@
 #username{
     margin-top: 10px;
     margin-bottom: 10px;
-    
+    transition: transform 0.3s ease-in-out;   
+}
+#username:hover {
+    transform: scale(1.08); 
 }
 #b{
     margin-top: 90px;
