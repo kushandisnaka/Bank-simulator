@@ -29,12 +29,15 @@
     background-color:#616762;
     font-weight: bold;
     font-size: 15px;
-    transition: transform 0.3s ease-in-out;
+    /* transition: transform 0.3s ease-in-out; */
     
 }
+/* #paybutton:hover {
+    transform: scale(1.1); 
+} */
 #paybutton:hover {
-    transform: scale(1.07); 
-}
+    background-color: #547a87;
+  }
 
 .modal-overlay {
     position: fixed;
