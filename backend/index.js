@@ -44,6 +44,9 @@ app.delete("/delete/:id",async (req,res) => {
         }
 });
 
+
+
+
 app.listen(3000, () => {
     console.log(`lisning on ${3000}`)
 })
